@@ -1,0 +1,56 @@
+5<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = 10;
+        var num2 = 5;
+
+        //算術運算符
+        console.log(num1 + num2); //加
+        console.log(num1 - num2); //減
+        console.log(num1 * num2); //乘
+        console.log(num1 / num2); //除
+        console.log(num1 % num2); //餘
+
+        //(++在前，先自增在運算)自增or自減運算符 -> 當前值+1 or -1
+        var num3 = 100
+        console.log(++num3); //先num3 + 1，後console出101
+        
+        var num4 = 100
+        console.log(--num4); //先num4 - 1，後console出99
+        
+        //(++在後，先運算在自增)
+        var num5 = 20
+        console.log(num5++); //先console出20，後num4 + 1 = 21
+        console.log(num5); //21
+
+
+        //賦值運算符
+        var numb1 = 10;
+        var numb2 = numb1;
+        console.log(numb1); //10
+        console.log(numb2); //10
+
+
+        // + - * / 
+        //numb2 = numb2 + numb1
+        console.log(numb2 += numb1)
+
+
+        //比較運算符
+        var a = 10;
+        var b = 20;
+        
+        // > < >= <= != "==" "===" "!=="
+        console.log(a > b); //false
+        console.log(a = b); //false
+        
+
+    </script>
+</body>
+</html>
