@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //abs() : 絕對值
+        var num = -100
+        console.log(Math.abs(num));
+
+        //max() : 最大值
+        console.log(Math.max(10,20,30,40,50));
+
+        //min() : 最小值
+        console.log(Math.min(10,20,30,40,50));
+
+        //floor() : 向下取整
+        console.log(Math.floor(10.9)); //10
+        console.log(Math.floor(-10.5)); //-11
+        
+        //ceil() : 向上取整
+        console.log(Math.ceil(10.9)); //11
+        console.log(Math.ceil(-10.5)); //-10
+
+        //random() : 隨機數 0 ~ 0.99999
+        console.log(Math.random());
+        
+        function getMinMax(min, max){
+            var result = Math.random() * (max-min) + min;
+            console.log(Math.floor(result));
+        }
+
+        getMinMax(10,20)
+
+    </script>
+</body>
+</html>

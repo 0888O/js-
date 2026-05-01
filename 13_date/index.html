@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Date.now()); //時間戳
+
+        console.log(new Date()); //目前日期
+
+        console.log(new Date().getMilliseconds()); //毫秒
+        console.log(new Date().getSeconds()); //秒
+        console.log(new Date().getMinutes()); //分鐘
+        console.log(new Date().getHours()); //小時 
+        console.log(new Date().getDate()); //日
+        console.log(new Date().getMonth() + 1); //月 一月:0
+        console.log(new Date().getDay()); //星期  星期日:0
+        console.log(new Date().getYear()); //距離1900年的年數
+        console.log(new Date().getFullYear()); //今年
+
+        // 2026/5/1
+        var year = new Date().getFullYear()
+        var month = new Date().getMonth() + 1
+        var day = new Date().getDate()
+        
+        console.log(year + '/' + month + '/' + day);
+        
+
+    </script>
+
+</body>
+</html>

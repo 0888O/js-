@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // name : value
+        var user = {
+            name : 'danny',
+            age : 18,
+            jobs : ['worker', 'student'],
+            getName : function(){
+                console.log('ivan');
+            },
+            container : {
+                frontEnd : '前端',
+                backEnd : '後端'
+            }
+        }
+        //調用方式 對象名.屬性
+        console.log(user.age);
+        user.getName() //ivan
+        
+        for(var i = 0 ; i<user.jobs.length ; i++){
+            console.log(user.jobs[i]);
+        }
+
+        //鏈式調用
+        console.log(user.container.backEnd);
+        
+
+    </script>
+</body>
+</html>
